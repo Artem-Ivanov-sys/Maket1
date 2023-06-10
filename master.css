@@ -1,0 +1,396 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    min-height: 100%;
+}
+
+header {
+    display: block;
+    overflow: hidden;
+    color: #eeeeee;
+    background-image: url("imgs/img1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.color {
+    background-color: #33333377;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    padding: 1em 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lines {
+    flex-basis: 2em;
+}
+
+header .logo {
+    font-family: 'Merriweather', serif;
+    text-shadow: 2px 2px gray;
+    font-size: 1.7em;
+    flex-basis: 75%;
+}
+
+.intro {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.arrow {
+    margin-top: 15%;
+    position: relative;
+    height: 20vh;
+}
+
+.arrow__img {
+    border-radius: 1000px;
+    border: 2px #eeeeee solid;
+    width: 2.7em;
+    height: 2.7em;
+    margin: auto;
+    display: grid;
+    align-items: center;
+}
+
+.arrow__img img {
+    margin: auto;
+}
+
+.vert__line {
+    position: absolute;
+    height: calc(100% - 2.7em);
+    border-right: 2px white solid;
+    bottom: -.1em;
+    left: 0;
+    width: 50%;
+}
+
+#but1 {
+    padding: 1em 2em;
+    border-radius: 1000px;
+    color: #eeeeee;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #eeeeee;
+    background: none;
+}
+#but2 {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    padding: 1em 2em;
+    border-radius: 1000px;
+    color: #eeeeee;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #eeeeee;
+    background: none;
+    margin: 2em 0 2em 0;
+}
+
+.works, .happy_clients, .team__head {
+    font-size: .8em;
+    padding: 3em 15%;
+ }
+ .team__head {
+     position: relative;
+     z-index: 2;
+     color: white;
+ }
+.services {
+    font-size: .8em;
+    background-color: #eee;
+    padding: 3em 15%;
+} .services h1, .works h1, .happy_clients h1, .team__head h1 {
+    font-size: 1.2em;
+}
+
+.services__list {
+    font-size: .9em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__item {
+    padding: 1em;
+}
+
+.services__head, .block_head, .happy_clients__head, {
+    margin-top: 2em;
+}
+
+.services__item_image {
+    width: 6em;
+    height: 6em;
+    background-image: radial-gradient(#475462, #2c3540);
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 2em;
+    border-radius: 1000px;
+} .services__item_image img {
+    margin: auto;
+}
+
+.line {
+    width: 3em;
+    margin: auto;
+    border: 1px solid #2c3540;
+} .team__head .line {
+    border-color: white;
+}
+
+.image_block {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.image_block_item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+} .image_block_item img {
+    height: 100%;
+}
+
+.quote {
+    text-align: center;
+}
+.quote .img {
+    width: 3em;
+    height: 3em;
+    overflow: hidden;
+    margin: auto;
+} .quote .img img {
+    height: 3em;
+}
+
+.circles {
+    margin: auto;
+    display: grid;
+    width: 4.8em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+} .circles .circle {
+    width: .8em;
+    height: .8em;
+    border: 1px solid black;
+    border-radius: 100px;
+    margin: 0 .4em;
+} #checked {
+    background-color: black;
+}
+
+.team {
+    background-image: url("imgs/background.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    padding: 2em;
+    font-size: .9em;
+}
+
+.people {
+    position: relative;
+    font-size: .9em;
+    margin: 0 10%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.people h1 {
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.people_item {
+    background-color: #ddd;
+    text-align: center;
+    padding-bottom: 1em;
+    width: 22%;
+}
+
+.people .photo {
+    width: 100%;
+} .people .photo img {
+    width: 100%;
+}
+
+.people .netw {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 3em;
+}
+.people .netw img {
+    width: 1.2em;
+}
+
+.stuff {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 15%;
+    background-color: #eee;
+}
+.stuff div {
+    width: 15%;
+}
+
+.pricing {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 10%;
+} .pricing__ {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    width: 80%;
+    text-align: center;
+    margin: 0 10%;
+}
+.pricing_item {
+    flex-basis: 33.33%;
+    text-align: center;
+    border: 1px solid #eee;
+} .pricing_item_ {
+    padding: 1em;
+    border: 1px solid #eee;
+} .pricing_item__2W {
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+#recom .pricing_item_ {
+    padding-top: 3em;
+    border-top: 4px solid black;
+}
+
+.text {
+    margin: 3em 0;
+    padding: 0 3em;
+    line-height: 2em;
+}
+
+.sele {
+    margin: 0 0 2em 0;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 1000px;
+    background-color: #475462;
+}
+
+.pre-footer {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+} .map {
+    background-image: url("imgs/map.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.regis {
+    background-image: url("imgs/img.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-row-gap: 2em;
+    margin-bottom: 2em;
+} .input_text {
+    background: none;
+    width: 100%;
+    border: 1px solid white;
+    color: white;
+    padding: .5em 1em;
+}
+
+form {
+    position: relative;
+    width: 60%;
+    margin: 3em auto;
+    color: white;
+    text-align: right;
+    z-index: 2;
+} .container > div:not(.right) {
+    padding-top: .5em;
+}
+.right {
+    margin-left: 2em;
+    padding-right: 2em;
+}
+
+#sub {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: .5em 1.5em;
+}
+
+.footer {
+    display: flex;
+    background-color: #eee;
+    align-items: center;
+    padding: 1em 10%;
+    justify-content: space-between;
+}
+
+.footer .logo {
+    flex-basis: 4em;
+    font-family: 'Merriweather', serif;
+    text-shadow: 2px 2px gray;
+    font-size: 1.7em;
+}
+
+.footer .copyright {
+    flex-basis: 60%;
+} .footer .netw {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 30%;
+} .footer .netw img {
+    width: 2em;
+    height: 2em;
+}
+
+input:not(input[type="text"]):hover {
+    cursor: pointer;
+}
